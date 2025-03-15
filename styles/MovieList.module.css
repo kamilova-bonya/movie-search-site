@@ -1,0 +1,41 @@
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+  
+.movieCard {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+  
+.movieCard:hover {
+  transform: scale(1.05);
+}
+  
+.poster {
+  width: 100%;
+  height: auto;
+}
+  
+.title {
+  font-size: 1.2em;
+  margin: 10px;
+}
+  
+.year {
+  font-size: 0.9em;
+  color: #666;
+  margin: 10px;
+}
+  
+.noResults {
+  text-align: center;
+  color: #666;
+}
+  
